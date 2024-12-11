@@ -16,17 +16,14 @@ url = URL.create(
 
 
 engine = create_engine(url)
-Session = sessionmaker(bind=engine)
+SessionLocal = sessionmaker(bind=engine)
 
-# Context Manager para manejar la sesión
-@contextmanager
-def get_session():
-    session = Session()
+
+def get_db():
+    db = SessionLocal()
     try:
-        yield session  
-        session.commit()
-    except SQLAlchemyError as e:
-        session.rollback()
-        raise e
+        yield db
     finally:
-        session.close()
+        db.close()
+
+
