@@ -1,0 +1,13 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# VsCode
+.vscode
+vscode/
+
+# Byte-compiled
+__pycache__/
