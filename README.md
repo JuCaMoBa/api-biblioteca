@@ -20,11 +20,14 @@ Antes de comenzar, asegúrate de tener instalados los siguientes programas en tu
      - `DB_USER`: Usuario de la base de datos.
      - `DB_PASSWORD`: Contraseña de la base de datos.
      - `DB_DATABASE`: Nombre de la base de datos.
+     - `DB_HOST`: renombrar con el nombre de la carpeta principal donde esta el código puede ser nombre_de_carpeta-db-1
+
    - Por defecto, puedes usar:
      ```     
      DB_USER=postgres
      DB_PASSWORD=postgres
      DB_DATABASE=postgres
+     DB_HOST=api-biblioteca-db-1
      ```
 
     las demás variables déjalas como están. 
